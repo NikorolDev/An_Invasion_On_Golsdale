@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
+    <link rel="stylesheet" href="GameStyleSheet.css">
+    <title>The Invasion On Golsdale</title>
+</head>
+
+<body>
+
+    <div id="MainMenu">
+        <img class="ImageBackground" src="Images/CastleMap.jpg" alt="Main Menu Background">
+        <h1 class="MenuTitle">The Invasion On Golsdale</h1>
+        <button class="ButtonMenu" onclick="SwitchMenu(2)">Start Game</button>
+        <button class="ButtonMenu" onclick="SwitchMenu(3)">Credits</button>
+    </div>
+
+    <div id="LevelSelectMenu" style="display: none">
+        <img class="ImageBackground" src="Images/CastleMap.jpg" alt="Main Menu Background">
+        <h1 class="MenuTitle">Select Level</h1>
+        <button class="ButtonLevel" onclick="SwitchMenu(4)"></button>
+        <button class="ButtonLevel" onclick="SwitchMenu(5)"></button>
+        <button class="ButtonLevel" onclick="SwitchMenu(6)"></button>
+        <button class="ButtonMenu" onclick="SwitchMenu(1)">Main Menu</button>-->
+    </div>
+
+    <div id="CreditsMenu" style="display: none">
+        <img class="ImageBackground" src="Images/CastleMap.jpg" alt="Main Menu Background">
+        <h1 class="MenuTitle">Credits</h1>
+        <p class="CreditsText">Thank you for playing The Invasion On Golsdale.<br>
+        Music:<br> Heroes of Might and Magic 5 soundtrack<br>
+        William Black - I'm sorry(Interlude)<br>
+        Also, thank you to my sister, Karolina, for drawing<br> 
+        the Main Menu image background!</p>
+        <button class="ButtonMenu" onclick="SwitchMenu(1)">Main Menu</button>
+    </div>
+
+    <div class="GameWindow" id="TransitionWindow" style="display: none">
+        <h1 class="WindowHeader" id="LevelName">Level Name</h1>
+        <p class="LevelText" id="LevelInformation">Level Information</p>
+        <h1 class="WindowHeader">PowerUps</h1>
+        <p class="LevelText" id="PowerUps">PowerUps List</p>
+        <button class="ButtonMenu" onclick="CloseWindow(1)">Close</button>
+    </div>
+
+
+    <div id="Game" style="display: none">
+        <button class="ButtonMenu" onclick="LoseLevelState(2)">Retreat</button>
+        <p id="GameLives">Lives: 3</p>
+        <p id="GameScore">Score: 0</p>
+        <p id="GameTimer">Time: 00:00</p>
+        
+
+        <div class="GameWindow" id="EndLevelWindow" style="display: none">
+            <h1 class="WindowHeader" id="EndLevelTitle">End Level Title</h1>
+            <p class="LevelText" id="EndLevelText">End Level Text</p>
+            <p class="LevelText" id="FinalScore">Final Score</p>
+            <button class="ButtonMenu" onclick="CloseWindow(2)">Close</button>
+        </div>
+    </div>
+
+    <audio id="MenuTrack" src="Audio/Music/Im_Sorry(Interlude).mp3" loop="loop"></audio>
+    <audio id="LevelTrack1" src="Audio/Music/HOMM5_Haven_Seige_Theme.mp3"></audio>
+    <audio id="LevelTrack2" src="Audio/Music/HOMM5_Fortress_Seige_Theme.mp3"></audio>
+    <audio id="LevelTrack3" src="Audio/Music/HOMM5_Stronghold_Seige_Theme.mp3"></audio>
+    <audio id="DefeatTrack" src="Audio/Music/HOMM5_Haven_Lose_Theme.mp3" loop="loop"></audio>
+    <audio id="VictoryTrack" src="Audio/Music/HOMM5_Haven_Win_Theme.mp3" loop="loop"></audio>
+
+    <script src="Scripts/UI/ContainerManager.js"></script>
+    <script src="Scripts/UI/HUDManager.js"></script>
+    <script src="Scripts/AudioPlaying/AudioManager.js"></script>
+
+    <script src="Scripts/three.js"></script>
+    <script src="Scripts/GLTFLoader.js"></script>
+    <script src="Scripts/Boxes/BoxClass.js"></script>
+    <script src="Scripts/Boxes/CreateWalls.js"></script>
+
+    <script src="Scripts/Ball/BallClass.js"></script>
+    <script src="Scripts/Bricks/BrickHealthMaps.js"></script>
+    <script src="Scripts/Bricks/BrickClass.js"></script>
+    <script src="Scripts/Powers/PowerUpClass.js"></script>
+    <script src="Scripts/Powers/Debuffer.js"></script>
+    <script src="Scripts/Paddle/PaddleClass.js"></script>
+
+    <script src="Scripts/GameStates.js"></script>
+    <script src="Scripts/SceneBuilder.js"></script>
+
+
+
+
+</body>
+</html>

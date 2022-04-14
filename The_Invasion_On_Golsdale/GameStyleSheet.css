@@ -1,0 +1,149 @@
+﻿/*StyleSheet for the game*/
+body {
+    margin: 0;
+}
+
+canvas {
+    display: block;
+}
+
+.ImageBackground
+{
+    display: block;
+    margin-left: auto; margin-right: auto;
+    width: 100%; height: 969px;
+}
+
+.MenuTitle {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bilbo Swash Caps';
+    font-size: 40px;
+    color: rgb(0, 0, 140);
+}
+
+.ButtonMenu 
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: none; background-color: inherit; color: rgb(0, 0, 140);
+    font-family: 'Bilbo Swash Caps'; font-size: 40px; font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+#MainMenu .ButtonMenu:nth-child(3) {
+    top: 50%; left: 50%;
+}
+
+#MainMenu .ButtonMenu:nth-child(4) {
+    top: 60%; left: 50%;
+}
+
+#LevelSelectMenu .ButtonMenu:nth-child(6) {
+    top: 85%; left: 50%;
+}
+
+.CreditsText{
+    position: absolute; top: 44%; left: 52%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bilbo Swash Caps'; font-size: 40px;
+    color: black;
+}
+
+#CreditsMenu .ButtonMenu:nth-child(4) {
+    top: 70%; left: 50%;
+}
+
+
+
+#TransitionWindow .ButtonMenu:nth-child(5) {
+    top: 95%;
+    left: 94%;
+}
+
+#Game .ButtonMenu:nth-child(1) {
+    top: 35%; left: 10%;
+}
+
+.ButtonMenu:hover 
+{
+    color: white;
+}
+
+.GameWindow {
+    position: absolute; top: 41%; left: 52%;
+    background-image: url(Images/PaperTexture.jpg);
+    width: 500px; width: 700px;
+    transform: translate(-50%, -50%);
+}
+
+.GameWindow .WindowHeader {
+    text-align: center;
+    color: rgb(108,108,108);
+    font-family: 'Bilbo Swash Caps'; font-size: 40px;
+}
+
+.GameWindow .LevelText {
+   font-family: 'Bilbo Swash Caps'; font-size: 30px;
+}
+
+#EndLevelWindow .ButtonMenu {
+    top: 94%;
+    left: 94%;
+}
+
+
+
+
+.ButtonLevel {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(212, 175, 55); background-color: rgb(100, 0, 0); border-radius: 100%;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+    .ButtonLevel:nth-child(3) {
+        top: 78%;
+        left: 47%;
+    }
+
+.ButtonLevel:nth-child(4) {
+    top: 9%; left: 70%;
+}
+
+.ButtonLevel:nth-child(5) {
+        top: 50%; left: 74%;
+}
+
+.ButtonLevel:hover{
+    border: 3px solid white;
+}
+
+
+
+
+
+#GameLives {
+    position: absolute; top: 40%; left: 10%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bilbo Swash Caps'; font-size: 30px;
+    color: rgb(0, 0, 140);
+}
+
+#GameScore {
+    position: absolute; top: 45%; left: 10%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bilbo Swash Caps'; font-size: 30px;
+    color: rgb(0, 0, 140);
+}
+
+#GameTimer {
+    position: absolute; top: 50%; left: 10%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bilbo Swash Caps'; font-size: 30px;
+    color: rgb(0, 0, 140);
+}
