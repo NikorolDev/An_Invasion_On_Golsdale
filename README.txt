@@ -1,5 +1,6 @@
 Before you play The Invasion On Golsdale if you decide to download the game from here.
 Preferable follow this link to the build of the game:
+https://nikorol.itch.io/an-invasion-on-golsdale
 
 
 The game will most likely not work on Internet Explorer and has not been tested on Microsoft Edge.
