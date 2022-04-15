@@ -1,9 +1,9 @@
-Before you play The Invasion On Golsdale.
+Before you play The Invasion On Golsdale if you decide to download the game from here.
+Preferable follow this link to the build of the game:
 
-Set Game.html as start page
 
-The game will most likely not work on Internet Explorer.
-The most preferred browsers to use to play the game are: Mozilla Firefox and Google Chrome.
+The game will most likely not work on Internet Explorer and has not been tested on Microsoft Edge.
+The most preferred browsers to play the game are: Mozilla Firefox and Google Chrome.
 
 If you want to start menu music when window loads, then you must interact with the browser.
 I suggest clicking the window a bunch of times before the menu is loaded.
